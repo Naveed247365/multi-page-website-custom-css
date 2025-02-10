@@ -48,7 +48,7 @@ const EirBuds = () => {
     }
   ]
   return (
-    <div>
+    <main>
       <div className='product-list'>
         {eirData.map((eir) => (
           <div key={eir.id} className='product-card'>
@@ -60,7 +60,7 @@ const EirBuds = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   )
 }
 

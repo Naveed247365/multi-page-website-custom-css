@@ -2,8 +2,8 @@ import HomeContent from "@/components/HomeContent";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <HomeContent />
-    </div>
+    </main>
   );
 }

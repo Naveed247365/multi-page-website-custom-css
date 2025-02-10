@@ -1,13 +1,21 @@
-import React from 'react'
+'use client';
+import { useRouter } from 'next/navigation';
 
 const HomeContent = () => {
+  const router = useRouter();
+
+  const handleShopNow = () => {
+    router.push('/EirBuds');
+  };
+
   return (
     <div>
         <section className='hero' style={{ backgroundImage: "url(hero.webp)"}}>
             <div>
                 <h1 className='fade-in'>Welcome to EirBuds</h1>
-                <p>Discover the perfect headphones <br /> for your music experience.</p>
-                <button>Shop Now</button>
+                <p>Discover the perfect sound for your lifestyle</p>
+                <button onClick={handleShopNow}>Shop Now</button>
+
             </div>
         </section>
     </div>
